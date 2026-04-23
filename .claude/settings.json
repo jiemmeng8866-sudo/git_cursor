@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "tools": {
+      "Bash": {
+        "allow": ["在项目目录下执行命令", "文件操作", "系统命令"]
+      },
+      "Edit": {
+        "allow": ["编辑项目文件", "批量替换"]
+      },
+      "Write": {
+        "allow": ["写入项目文件", "创建新文件"]
+      },
+      "Read": {
+        "allow": ["读取项目文件", "读取任何文件"]
+      },
+      "Grep": {
+        "allow": ["搜索项目内容", "全文搜索"]
+      },
+      "Glob": {
+        "allow": ["文件模式匹配", "查找文件"]
+      },
+      "Agent": {
+        "allow": ["启动任何类型代理", "并行运行代理"]
+      },
+      "Skill": {
+        "allow": ["调用任何技能", "使用所有技能"]
+      },
+      "WebFetch": {
+        "allow": ["获取网页内容"]
+      },
+      "WebSearch": {
+        "allow": ["网络搜索"]
+      }
+    },
+    "scope": "project",
+    "allowAllTools": true
+  }
+}
