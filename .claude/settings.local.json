@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:clawhub.ai)",
-      "Read(//c/Users/m8705/.claude/**)"
+      "Read(//c/Users/m8705/.claude/**)",
+      "Bash(git commit *)",
+      "Bash(git add *)"
     ]
   }
 }
