@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #6B8E7B;
+  --color-secondary: #E8DDD4;
+  --color-accent: #C4A77D;
+  --color-dark: #2D3436;
+  --color-light: #FAFAF8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 统一使用圆润的无衬线字体 */
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.8;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 标题字体 - 使用适中字重，更圆润 */
+.font-serif {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* 大标题更柔和 */
+h1, h2, h3, .heading {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+/* Hero Section */
+.hero-gradient {
+  background: linear-gradient(135deg, #6B8E7B 0%, #8FAF9E 50%, #B8CFC0 100%);
+}
+
+/* Card Hover Effects */
+.course-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -12px rgba(107, 142, 123, 0.25);
+}
+
+.course-card:hover .course-image {
+  transform: scale(1.05);
+}
+
+.course-image {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Category Pill */
+.category-pill {
+  transition: all 0.3s ease;
+}
+
+.category-pill:hover {
+  transform: translateY(-2px);
+}
+
+.category-pill.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #6B8E7B 0%, #8FAF9E 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -6px rgba(107, 142, 123, 0.5);
+}
+
+/* Decorative Elements */
+.lotus-divider {
+  background: linear-gradient(90deg, transparent 0%, #C4A77D 50%, transparent 100%);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5A7D6A;
+}
+
+/* Difficulty Badge Colors */
+.badge-beginner {
+  background-color: #81C784;
+  color: #1B5E20;
+}
+
+.badge-intermediate {
+  background-color: #FFD54F;
+  color: #F57F17;
+}
+
+.badge-advanced {
+  background-color: #E57373;
+  color: #B71C1C;
+}

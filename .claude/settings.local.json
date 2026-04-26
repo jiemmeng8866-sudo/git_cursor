@@ -4,7 +4,10 @@
       "WebFetch(domain:clawhub.ai)",
       "Read(//c/Users/m8705/.claude/**)",
       "Bash(git commit *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(pnpm dev *)",
+      "Bash(npm --version)",
+      "Bash(npx --version)"
     ]
   }
 }
