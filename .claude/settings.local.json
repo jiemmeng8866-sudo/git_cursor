@@ -7,7 +7,12 @@
       "Bash(git add *)",
       "Bash(pnpm dev *)",
       "Bash(npm --version)",
-      "Bash(npx --version)"
+      "Bash(npx --version)",
+      "Bash(python count_chars.py)",
+      "Bash(git mv *)",
+      "Bash(ls \"D:\\\\\\\\00_cursor\\\\\\\\02_novel\\\\\\\\02_第二本_记忆\\\\\\\\03_Drafts\\\\\\\\\")",
+      "Bash(unzip -l /tmp/novel-writer-skills.zip)",
+      "Bash(curl -sL --connect-timeout 15 https://ghproxy.net/https://raw.githubusercontent.com/bmad-code-org/bmad-method/main/skills/bmad-distillator/SKILL.md)"
     ]
   }
 }
