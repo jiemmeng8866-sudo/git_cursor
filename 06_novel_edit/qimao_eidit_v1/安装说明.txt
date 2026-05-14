@@ -1,0 +1,9 @@
+﻿qimao_eidit_v1（唯一发行目录）
+========================
+运行方式见 README.md。首次在本文件夹内：
+
+  python -m venv .venv
+  .\.venv\Scripts\Activate.ps1
+  pip install -r requirements.txt -r requirements-desktop.txt
+
+DeepSeek：复制 env.local.example 为 env.local 并填写密钥。
